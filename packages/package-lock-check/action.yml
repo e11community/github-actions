@@ -1,9 +1,6 @@
 name: package-lock.json checker
 description: gives confidence package-lock.json is in the right format
 on: [push]
-inputs:
-  ref:
-    required: true
 runs:
   using: node16
   main: index.js
