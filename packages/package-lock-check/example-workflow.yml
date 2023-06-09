@@ -1,0 +1,14 @@
+---
+name: lock_check_flow
+
+on:
+  push:
+    paths:
+      - 'package-lock.json'
+
+jobs:
+  lock_check_job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: @e11community/package-lock-check@v1

@@ -1,0 +1,27 @@
+{
+  "name": "package-lock-check",
+  "version": "v1",
+  "description": "Checks package-lock.json is in expected format",
+  "main": "index.js",
+  "scripts": {
+    "test": "/usr/bin/true"
+  },
+  "repository": {
+    "url": "https://github.com/e11community/github-actions.git",
+    "type": "git",
+    "directory": "packages/package-lock-check"
+  },
+  "keywords": [
+    "github",
+    "action",
+    "version",
+    "versionining",
+    "lockfile"
+  ],
+  "author": "Engineering 11 LLC",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  }
+}
