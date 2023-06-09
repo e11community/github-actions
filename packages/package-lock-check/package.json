@@ -1,6 +1,6 @@
 {
-  "name": "package-lock-check",
-  "version": "1.0.0",
+  "name": "@e11community/package-lock-check",
+  "version": "1.0.1",
   "description": "Checks package-lock.json is in expected format",
   "main": "index.js",
   "scripts": {
