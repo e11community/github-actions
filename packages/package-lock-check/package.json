@@ -1,10 +1,18 @@
 {
   "name": "@e11community/package-lock-check",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Checks package-lock.json is in expected format",
   "main": "index.js",
-  "bin": "node ./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./bin": "./bin/index.js",
+    "./package.json": "./package.json"
+  },
+  "bin": "./bin/index.js",
   "scripts": {
+    "build": "./build.sh",
+    "clean": "./clean.sh",
+    "prepack": "npm run clean && npm run build",
     "test": "/usr/bin/true"
   },
   "repository": {

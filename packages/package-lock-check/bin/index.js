@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const {Console} = require('console')
 const { promises: fs } = require('fs')
 const {resolve} = require('path')
